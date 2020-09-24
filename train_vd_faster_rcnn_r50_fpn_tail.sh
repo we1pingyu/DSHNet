@@ -1,0 +1,1 @@
+python tools/train.py configs/faster_rcnn/vd_faster_rcnn_r50_fpn_tail.py   --work-dir checkpoints/vd_faster_rcnn_r50_fpn_tail
