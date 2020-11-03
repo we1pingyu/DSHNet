@@ -38,8 +38,7 @@ Multi-gpu training and test are also supported as mmdetection.
 ## Test
 ```test
 # Single GPU
-python tools/test_lvis.py \
- ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
+python tools/tests.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
  ```
  
 For example (assume that you have downloaded the corresponding chechkpoints file or train a model by ypurself to proper path), to evaluate the trained **DSHNet** model with Faster R-CNN R50-FPN for valset of VisDrone:
