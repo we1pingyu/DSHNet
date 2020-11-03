@@ -14,3 +14,22 @@ The requirements are exactly the same as [mmdetection v2.3.0rc0+8194b16](https:/
 - mmcv 1.0.4
 
 With settings above, please refer to [offical guide of mmdetection](https://github.com/open-mmlab/mmdetection/blob/v2.3.0/docs/install.md) for installation.
+### 2. Data:
+Please download trainset and valset of [VisDrone2020-DET dataset](http://aiskyeye.com/download/object-detection/) and [UAVDT-Benchmark-M](https://sites.google.com/site/daviddo0323/projects/uavdt), then unzip all the files and put them under proper paths.
+
+In order to make better use of mmdetection, please convert the datasets to coco format.
+
+## Training
+
+Both training and test commands are exactly the same as mmdetection.
+
+```train
+# Single GPU
+python tools/train.py ${CONFIG_FILE}
+```
+
+For example, to train a **DSHNet** model with Faster R-CNN R50-FPN for trainset of VisDrone:
+```train
+# Single GPU
+python tools/train.py configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py --work-dir checkpoints/vd_faster_rcnn_r101_fpn_tail
+``` 
