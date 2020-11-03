@@ -26,6 +26,7 @@ Both training and test commands are exactly the same as mmdetection.
 # Single GPU
 python tools/train.py ${CONFIG_FILE}
 ```
+Please make sure the path of datasets of config .py file is right.  
 
 For example, to train a **DSHNet** model with Faster R-CNN R50-FPN for trainset of VisDrone:
 ```train
@@ -33,3 +34,16 @@ For example, to train a **DSHNet** model with Faster R-CNN R50-FPN for trainset 
 python tools/train.py configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py --work-dir checkpoints/vd_faster_rcnn_r101_fpn_tail
 ``` 
 Multi-gpu training and test are also supported as mmdetection.
+
+## Testing
+```test
+# single gpu test
+python tools/test_lvis.py \
+ ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
+ ```
+ 
+For example (assume that you have downloaded the corresponding chechkpoints file or train a model by ypurself to proper path), to evaluate the trained **DSHNet** model with Faster R-CNN R50-FPN for valset of VisDrone:
+```eval
+# single-gpu testing
+python tools/test.py configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py checkpoints/vd_faster_rcnn_r101_fpn_tail/latest.pth --eval bbox
+ ```
