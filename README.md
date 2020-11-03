@@ -49,7 +49,7 @@ python tools/test.py configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py checkpo
  ```
 ## Results and models
 Please refer to our paper for complete results.
-|methods|backbone|setting|map|map50|map75|maps|mapm|mapl|pedestrian|people|bicycle|car|van|truck|tricycle|awning-tricycle|bus|motor|model|
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|FRCNN+FPN+DSHNet|R50|lt:lh=2:1|24.6|44.4|24.1|17.5|33.8|36.1|22.5|16.5|10.1|52.8|32.6|22.1|17.5|8.8|39.5|23.7|todo|
-|FRCNN+FPN+DSHNet|R101|lt:lh=2:1|24.4|44.3|23.8|17.2|33.6|34.8|21.7|16.0|10.1|52.2|31.6|22.7|17.1|9.5|38.6|24.0|todo|
+|methods|backbone|map|map50|map75|maps|mapm|mapl|ped.|people|bicycle|car|van|truck|tricycle|awn.|bus|motor|model|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|FRCNN+FPN+DSHNet|R50|24.6|44.4|24.1|17.5|33.8|36.1|22.5|16.5|10.1|52.8|32.6|22.1|17.5|8.8|39.5|23.7|todo|
+|FRCNN+FPN+DSHNet|R101|24.4|44.3|23.8|17.2|33.6|34.8|21.7|16.0|10.1|52.2|31.6|22.7|17.1|9.5|38.6|24.0|todo|
