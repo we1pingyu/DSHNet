@@ -21,7 +21,7 @@ In order to make better use of mmdetection, please convert the datasets to coco 
 
 ## Training
 
-Both training and test commands are exactly the same as mmdetection.
+Both training and test commands are exactly the same as mmdetection, so please refer to mmdetection for basic usage.
 ```train
 # Single GPU
 python tools/train.py ${CONFIG_FILE}
