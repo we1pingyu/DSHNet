@@ -22,7 +22,6 @@ In order to make better use of mmdetection, please convert the datasets to coco 
 ## Training
 
 Both training and test commands are exactly the same as mmdetection.
-
 ```train
 # Single GPU
 python tools/train.py ${CONFIG_FILE}
@@ -33,3 +32,4 @@ For example, to train a **DSHNet** model with Faster R-CNN R50-FPN for trainset 
 # Single GPU
 python tools/train.py configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py --work-dir checkpoints/vd_faster_rcnn_r101_fpn_tail
 ``` 
+Multi-gpu training and test are also supported as mmdetection.
