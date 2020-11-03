@@ -24,7 +24,6 @@ model = dict(
     # neck=dict(type='DensityFPN'),
     rpn_head=dict(
         type='RPNHead',
-        # adaptive=False,
         in_channels=256,
         feat_channels=256,
         anchor_generator=dict(
@@ -43,7 +42,6 @@ model = dict(
 
     roi_head=dict(
         type='TailRoIHead',
-        attention=False,
         labels_tail=[2, 4, 5, 6, 7, 8, 9],
         labels=[0, 1, 3],
         bbox_roi_extractor=dict(
@@ -63,8 +61,8 @@ model = dict(
                 target_stds=[0.1, 0.1, 0.2, 0.2]),
             reg_class_agnostic=False,
             loss_cls=dict(
-                type='CrossEntropyLoss', use_sigmoid=False, loss_weight=6.0),
-            loss_bbox=dict(type='L1Loss', loss_weight=6.0)),
+                type='CrossEntropyLoss', use_sigmoid=False, loss_weight=2.0),
+            loss_bbox=dict(type='L1Loss', loss_weight=2.0)),
         bbox_head=dict(
             type='TailBBoxHead',
             in_channels=256,
@@ -183,19 +181,19 @@ data = dict(
     workers_per_gpu=1,
     train=dict(
         type=dataset_type,
-        # classes=classes,
+        classes=classes,
         ann_file=data_root + 'VisDrone2019-DET-train/coco_annotations/train.json',
         img_prefix=data_root + 'VisDrone2019-DET-train/images/',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
-        # classes=classes,
+        classes=classes,
         ann_file=data_root + 'VisDrone2019-DET-val/coco_annotations/val.json',
         img_prefix=data_root + 'VisDrone2019-DET-val/images/',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        # classes=classes,
+        classes=classes,
         ann_file=data_root + 'VisDrone2019-DET-val/coco_annotations/val.json',
         img_prefix=data_root + 'VisDrone2019-DET-val/images/',
         pipeline=test_pipeline))
@@ -208,4 +206,3 @@ lr_config = dict(
     warmup_ratio=1.0 / 3,
     step=[8, 12, 16])
 total_epochs = 18
-# load_from = '/data/yuweiping/cascade_rcnn_hrnetv2p_w40_20e_coco_20200512_161112-75e47b04.pth'
