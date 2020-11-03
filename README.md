@@ -52,4 +52,5 @@ Please refer to our paper for complete results.
 |methods|backbone|map|map50|map75|maps|mapm|mapl|ped.|people|bicycle|car|van|truck|tricycle|awn.|bus|motor|model|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |[FRCNN+FPN+DSHNet](configs/faster_rcnn/vd_faster_rcnn_r50_fpn_tail.py)|R50|24.6|44.4|24.1|17.5|33.8|36.1|22.5|16.5|10.1|52.8|32.6|22.1|17.5|8.8|39.5|23.7|[Google Drive](https://drive.google.com/file/d/1dw-FlzVkcQ64eYi7kV3HOqaiExRzIIum/view?usp=sharing)|
-|[FRCNN+FPN+DSHNet](configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py)|R101|24.4|44.3|23.8|17.2|33.6|34.8|21.7|16.0|10.1|52.2|31.6|22.7|17.1|9.5|38.6|24.0|todo|
+|[FRCNN+FPN+DSHNet](configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py)|R101|24.4|44.3|23.8|17.2|33.6|34.8|21.7|16.0|10.1|52.2|31.6|22.7|17.1|9.5|38.6|24.0|[Google Drive](https://drive.google.com/file/d/1BlzMjT5vKqRhipFO4Da8Zi7kOpb8PLnu/view?usp=sharing)|
+|[RetinaNet+FPN+DSHNet](configs/retinanet/vd_retinanet_r50_fpn_base.py)|R50|lt:lh=2:1|16.1|30.2|15.5|9.6|24.0|28.6|14.1|8.9|1.3|48.2|24.8|14.2|8.8|6.0|21.6|13.1|[Google Drive](https://drive.google.com/file/d/1Pd2DhxTk8aR05mk75piAy-iUVD6k0WU_/view?usp=sharing)|
