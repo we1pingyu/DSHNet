@@ -58,4 +58,4 @@ Please refer to our paper for complete results.
 ### uavdt
 |methods|backbone|map|map50|map75|maps|mapm|mapl|car|truck|bus|model|
 |---|---|---|---|---|---|---|---|---|---|---|---|
-|RetinaNet+FPN+DSHNet|R50|17.8|30.4|19.7|11.9|29.9|27.8|32.1|4.2|17.0|todo|
+|[RetinaNet+FPN+DSHNet](configs/retinanet/uavdt_retinanet_r50_fpn_tail.py)|R50|17.8|30.4|19.7|11.9|29.9|27.8|32.1|4.2|17.0|[Google Drive](https://drive.google.com/file/d/10Hj00loxSUK_ASuYl4E4gkwqCYO6H4b_/view?usp=sharing)|
