@@ -2,8 +2,8 @@
 
 ## Introduction
 This repo is the implementation for WACV 2021 paper: [**Towards Resolving the Challenge of Long-tail Distribution in UAV Images for Object Detection**.](https://arxiv.org/pdf/2011.03822.pdf)
-![Framework](fig1.png). 
-![demo](fig2.png)
+![Framework](fig2.png). 
+![demo](dshnet_0000116_00351_d_0000083.jpg)
 ## Requirements
 ### 1. Environment:
 The implementation is based on mmdetection. So the requirements are exactly the same as [mmdetection v2.3.0rc0+8194b16](https://github.com/open-mmlab/mmdetection/tree/v2.3.0). We tested on the following settings:
