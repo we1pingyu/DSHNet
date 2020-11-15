@@ -14,7 +14,7 @@ The implementation is based on mmdetection. So the requirements are exactly the 
 - torchvision 0.6.0
 - mmcv 1.0.4
 
-With settings above, please refer to [offical guide of mmdetection](https://github.com/open-mmlab/mmdetection/blob/v2.3.0/docs/install.md) for installation.
+With settings above, please refer to [official guide of mmdetection](https://github.com/open-mmlab/mmdetection/blob/v2.3.0/docs/install.md) for installation.
 ### 2. Data:
 Please download trainset and valset of [VisDrone2020-DET dataset](http://aiskyeye.com/download/object-detection/) and [UAVDT-Benchmark-M](https://sites.google.com/site/daviddo0323/projects/uavdt), then unzip all the files and put them under proper paths.
 
