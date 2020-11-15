@@ -42,7 +42,7 @@ Multi-gpu training and test are also supported as mmdetection.
 python tools/tests.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
  ```
  
-For example (assume that you have downloaded the corresponding chechkpoints file or train a model by ypurself to proper path), to evaluate the trained **DSHNet** model with Faster R-CNN R50-FPN for valset of VisDrone:
+For example (assuming that you have downloaded the corresponding chechkpoints file or train a model by ypurself to proper path), to evaluate the trained **DSHNet** model with Faster R-CNN R50-FPN for valset of VisDrone:
 ```test
 # Single GPU
 python tools/test.py configs/faster_rcnn/vd_faster_rcnn_r101_fpn_tail.py checkpoints/vd_faster_rcnn_r101_fpn_tail/latest.pth --eval bbox
