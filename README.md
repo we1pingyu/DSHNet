@@ -1,7 +1,7 @@
 # Towards Resolving the Challenge of Long-tail Distribution in UAV Images for Object Detection
 
 ## Introduction
-This repo is the official implementation for WACV 2021 paper: [**Towards Resolving the Challenge of Long-tail Distribution in UAV Images for Object Detection**.](https://arxiv.org/pdf/2011.03822.pdf)
+This repo is the official implementation for WACV 2021 paper: [**Towards Resolving the Challenge of Long-tail Distribution in UAV Images for Object Detection**.](https://openaccess.thecvf.com/content/WACV2021/html/Yu_Towards_Resolving_the_Challenge_of_Long-Tail_Distribution_in_UAV_Images_WACV_2021_paper.html)
 ![Framework](fig2.png). 
 ![demo](dshnet_0000116_00351_d_0000083.jpg)
 ## Requirements
